@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					9BC0AD221D5DC96400453CF6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HWDYJ3BW6Z;
 					};
 					9BC0AD3B1D5DC96400453CF6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -497,6 +498,7 @@
 			baseConfigurationReference = 700DA9683098BE22AC1A685C /* Pods-CollectionViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWDYJ3BW6Z;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ds.CollectionViewDemo;
@@ -509,6 +511,7 @@
 			baseConfigurationReference = A96B3C8B0F1482B3FCBB9AF2 /* Pods-CollectionViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HWDYJ3BW6Z;
 				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ds.CollectionViewDemo;
