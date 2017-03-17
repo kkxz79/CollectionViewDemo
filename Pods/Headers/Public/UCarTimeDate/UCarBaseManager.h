@@ -1,0 +1,1 @@
+../../../UCarTimeDate/UCarTimeDate/Classes/UCarBaseManager.h

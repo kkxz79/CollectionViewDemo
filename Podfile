@@ -5,5 +5,6 @@ target "CollectionViewDemo" do
 
 pod 'Masonry'
 pod 'SDWebImage'
+pod 'UCarTimeDate'
 
 end
