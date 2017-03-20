@@ -1,9 +1,9 @@
 PODS:
-  - Masonry (1.0.1)
-  - SDWebImage (3.8.1):
-    - SDWebImage/Core (= 3.8.1)
-  - SDWebImage/Core (3.8.1)
-  - UCarTimeDate (1.0.0)
+  - Masonry (1.0.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - UCarTimeDate (1.0.2)
 
 DEPENDENCIES:
   - Masonry
@@ -11,9 +11,9 @@ DEPENDENCIES:
   - UCarTimeDate
 
 SPEC CHECKSUMS:
-  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
-  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
-  UCarTimeDate: 23d2709a0a5eb0857fbd1b87824946541e37c146
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UCarTimeDate: 4c81f06f8283e46964de0e1508cbb289fe5da5c6
 
 PODFILE CHECKSUM: 160bc1d2298b997ff1ff76b9913927d8910b545d
 

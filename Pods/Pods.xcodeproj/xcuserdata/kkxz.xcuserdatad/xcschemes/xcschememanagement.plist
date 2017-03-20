@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UCarTimeDate-UCarTimeDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UCarTimeDate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -28,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0E7EDD5DF8F969C4525B5DCAC9F92CA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2FD28BF0547E5D2BCF624EA93C9E3386</key>
 		<dict>
 			<key>primary</key>
 			<true/>
