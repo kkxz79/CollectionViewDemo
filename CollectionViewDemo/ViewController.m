@@ -56,7 +56,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.imageArray.count;
+    return self.imageArray.count+1;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -64,7 +64,14 @@
     static NSString *cellIName = @"MyCollectionViewCell";
     ImageCollectionCell * cell = (ImageCollectionCell*)[collectionView dequeueReusableCellWithReuseIdentifier:cellIName forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    [cell setCellContentImageWith:self.imageArray[indexPath.row]];
+    if(indexPath.row<9){
+        [cell setCellContentImageWith:self.imageArray[indexPath.row]];
+    }
+    else{
+        NSString * imagePath = [self pathForResource:@"ucarpic" ofType:@"jpg"];
+        cell.iconImage.image = [UIImage imageNamed:imagePath];
+    }
+    
     return cell;
 }
 
@@ -121,6 +128,16 @@
     NSLog(@"复制之后，可以插入一个新的cell");
 }
 
+//TODO:获取库图片
+- (NSString *)pathForResource:(NSString *)resource ofType:(NSString *)type
+{
+    NSBundle *selfBundle = [NSBundle bundleForClass:[self class]];
+    NSString *bundlePath = [selfBundle pathForResource:@"UCarTimeDate" ofType:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:bundlePath];
+    return [resourceBundle pathForResource:resource ofType:type];
+}
+
+
 #pragma mark - UICollectionViewDelegateFlowLayout method
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
@@ -169,7 +186,6 @@
                                     @"http://tupian.qqjay.com/160x160/u/2015/1019/1_21410_7.jpg",
                                     @"http://img73.nipic.com/file/20160420/20721554_193605692000_1.jpg",
                                     @"http://img3.redocn.com/tupian/20111021/hulunbeiercaoyuanfengjing_407689_small.jpg",
-                                    @"http://img3.redocn.com/tupian/20151022/dizhonghaijianzhufengjingjpg_5165324_small.jpg"
                                 ];
     }
     return _imageArray;
