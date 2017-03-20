@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "TimeDate.h"
+#import <UCarTimeDate/UCarTimeDate.h>
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     
-    TimeDate * timeDate =[[TimeDate alloc] init];
+    UCarBaseManager * timeDate =[[UCarBaseManager alloc] init];
     NSTimeInterval timeInterval = 1234567890;
     NSString * time = [timeDate changeToStandardTime:timeInterval];
     NSLog(@"time is ------%@",time);
